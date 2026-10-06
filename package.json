@@ -1,0 +1,24 @@
+{
+  "name": "fst-buddy-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "FST Buddy backend: chat orchestration, server-authoritative usage ledger, ad-unlock verification, RAG notes retrieval, admin API.",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "reindex-notes": "node src/reindex.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "multer": "^2.0.0",
+    "pdf-parse": "^1.1.1",
+    "mammoth": "^1.8.0",
+    "nanoid": "^5.0.7"
+  }
+}

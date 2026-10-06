@@ -1,0 +1,6 @@
+# Optional. The frontend now defaults to calling relative /api paths,
+# which works both in production (the backend serves this app from its
+# own origin) and in local dev (vite.config.js proxies /api to
+# 127.0.0.1:4317). Only set this if the frontend and backend are on
+# different origins — e.g. a split deployment.
+# VITE_API_BASE_URL=http://127.0.0.1:4317/api

@@ -1,0 +1,10 @@
+{
+  "name": "fst-buddy",
+  "private": true,
+  "version": "0.1.0",
+  "description": "FST Buddy — build the frontend once, then run the backend, which serves it as one deployable service.",
+  "scripts": {
+    "build": "npm install --prefix desktop && npm run build --prefix desktop && npm install --prefix server",
+    "start": "npm start --prefix server"
+  }
+}
